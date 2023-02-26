@@ -44,7 +44,7 @@
 	});
 </script>
 
-    <canvas bind:this={canvas} width={8000} height={4000} />
+    <canvas style="filter:hue-rotate({Math.random() * 360}deg) blur(40px)" bind:this={canvas} width={8000} height={4000} />
 <style>
 	canvas {
 		width: 100vw;
@@ -52,6 +52,6 @@
 		background-color: rgb(0, 0, 0);
         position: absolute;
         z-index: -500;
-        filter:hue-rotate(300deg) blur(40px);
+        filter:hue-rotate(deg) blur(40px);
 	}
 </style>
