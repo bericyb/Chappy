@@ -1,6 +1,6 @@
 # Chappy
 
-Chappy is a chatbot that creates a unique guided meditation experiences.
+Chappy is a chatbot that creates unique guided meditation experiences.
 
 # Why
 
