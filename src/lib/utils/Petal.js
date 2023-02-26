@@ -64,6 +64,7 @@ export class Petal {
 		this.ctx.fill();
 	}
 
+	//TODO: Fix growth
 	grow() {
 		let newSize = this.size;
 		if (this.size < 200) {
@@ -82,28 +83,28 @@ export class Petal {
 		let size = newSize;
 		let x = this.points[0].x;
 		let y = this.points[0].y;
-		// this.points = [
-		// 	{
-		// 		x: x,
-		// 		y: y
-		// 	},
-		// 	{
-		// 		x: x - (size * Math.random() * 4 + size * 2),
-		// 		y: y - size * Math.random() * 8
-		// 	},
-		// 	{
-		// 		x: x,
-		// 		y: y - (size * 10 + Math.random() * 5 * size)
-		// 	},
-		// 	{
-		// 		x: x + size * Math.random() * 8 + size * 2,
-		// 		y: y - size * 8
-		// 	},
-		// 	{
-		// 		x: x,
-		// 		y: y
-		// 	}
-		// ];
+		this.points = [
+			{
+				x: x,
+				y: y
+			},
+			{
+				x: x - (size * Math.random() * 4 + size * 2),
+				y: y - size * Math.random() * 8
+			},
+			{
+				x: x,
+				y: y - (size * 10 + Math.random() * 5 * size)
+			},
+			{
+				x: x + size * Math.random() * 8 + size * 2,
+				y: y - size * 8
+			},
+			{
+				x: x,
+				y: y
+			}
+		];
 	}
 
 	rotate() {
