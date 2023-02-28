@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  node-app:
+    image: chappy-node
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: chappy-node
+    ports:
+      - 5173:5173
