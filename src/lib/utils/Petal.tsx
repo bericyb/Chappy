@@ -42,7 +42,7 @@ export class Petal {
 		this.hueChangeG = Math.random() * 0.75;
 		this.hueChangeB = Math.random() * 0.75;
 		this.ctx = ctx;
-		this.rotateSpeed = (isRight ? -1 : 1) * (Math.random() * 0.001);
+		this.rotateSpeed = (isRight ? -1 : 1) * (Math.random() * 0.002);
 	}
 
 	draw() {
@@ -80,9 +80,9 @@ export class Petal {
 		}
 
 		this.size = newSize;
-		let size = newSize;
-		let x = this.points[0].x;
-		let y = this.points[0].y;
+		const size = newSize;
+		const x = this.points[0].x;
+		const y = this.points[0].y;
 		this.points = [
 			{
 				x: x,
@@ -108,7 +108,7 @@ export class Petal {
 	}
 
 	rotate() {
-		let r = this.rotateSpeed;
+		const r = this.rotateSpeed;
 		for (let i = 1; i < this.points.length; i++) {
 			let xPrime =
 				(this.points[i].x - this.points[0].x) * Math.cos(r) -

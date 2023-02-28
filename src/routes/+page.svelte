@@ -21,10 +21,10 @@
             <h1>Hi, I'm Chappy,</h1>
             <h3>a guided meditation chatbot.</h3>
             <p>I can take you anywhere you'd like.</p>
-            <div style="padding: {20};">
+            <!-- <div style="padding: {20};">
                 <input
                 placeholder="Take me to...">
-            </div>
+            </div> -->
         </div>
     </div>
     {/if}

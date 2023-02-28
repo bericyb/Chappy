@@ -1,7 +1,7 @@
 <script>
 	// @ts-nocheck
 	import { onMount } from 'svelte';
-	import { Petal } from '../../lib/utils/Petal';
+	import { Petal } from '../utils/Petal';
 
 	let canvas;
 
@@ -10,7 +10,7 @@
 		const width = canvas.width;
 		const height = canvas.height;
 		let petals = [];
-		for (let i = 0; i < 200; i++) {
+		for (let i = 0; i < 100; i++) {
 			petals.push(
 				new Petal(
 					ctx,
@@ -52,6 +52,5 @@
 		background-color: rgb(0, 0, 0);
         position: absolute;
         z-index: -500;
-        filter:hue-rotate(deg) blur(40px);
 	}
 </style>
