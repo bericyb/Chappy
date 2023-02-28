@@ -1,4 +1,4 @@
-// import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-auto';
 import adapterNode from "@sveltejs/adapter-auto";
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
@@ -9,8 +9,10 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		// adapter: adapter()
-		adapter: adapterNode(),
+		adapter: adapter()
+		// adapter: adapterNode({
+			// out: 'build',
+		// }),
 	}
 };
 
