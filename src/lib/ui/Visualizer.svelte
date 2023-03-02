@@ -10,7 +10,7 @@
 		const width = canvas.width;
 		const height = canvas.height;
 		let petals = [];
-		for (let i = 0; i < 100; i++) {
+		for (let i = 0; i < 40; i++) {
 			petals.push(
 				new Petal(
 					ctx,
