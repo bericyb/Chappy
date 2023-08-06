@@ -42,7 +42,7 @@ export class Petal {
 		this.hueChangeG = Math.random() * 0.75;
 		this.hueChangeB = Math.random() * 0.75;
 		this.ctx = ctx;
-		this.rotateSpeed = (isRight ? -1 : 1) * (Math.random() * 0.002);
+		this.rotateSpeed = (isRight ? -1 : 1) * (Math.random() * 0.005);
 	}
 
 	draw() {
